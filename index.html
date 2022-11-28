@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Shop demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav>
+            <div class="img-nav">
+                <img src="logo5.jpeg" alt="" height="50px" />
+            </div>
+            <div class="content-nav">
+                <ul>
+                    <li><a href="#">ĐĂNG KÝ</a></li>
+                    <li><a href="#">ĐĂNG NHẬP</a></li>
+                    <li><a href="">SẢN PHẨM</a></li>
+                    <li><a href="#">TRANG CHỦ</a></li>
+                </ul>
+                <form>
+                    <input type="text" name="search" id="text" placeholder="Tìm kiếm sản phẩm..." />
+                    <button type="submit" id="icon"><i class="fa fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+            <!-- The Modal -->
+            <button id="cart">
+                <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                Giỏ Hàng
+            </button>
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Giỏ Hàng</h5>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <div class="cart-row">
+                            <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                            <span class="cart-price cart-header cart-column">Giá</span>
+                            <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                        </div>
+                        <div class="cart-items">
+                           
+                        </div>
+                        <div class="cart-total">
+                            <strong class="cart-total-title">Tổng Cộng:</strong>
+                            <span class="cart-total-price">0VNĐ</span>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary close-footer">Đóng</button>
+                        <button type="button" class="btn btn-primary order">Thanh Toán</button>
+                    </div>
+                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <br />
+    <div class="slider">
+        <img src="slide.jpg"
+            alt="" width="1404px" height="500px">
+    </div>
+    <section class="wrapper">
+
+        <div class="products">
+            <ul>
+                <h2>BACKPACKS | BALO</h2><br />
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham1.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">TieDye BackPack Dark Green - TDBP dark green</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham2.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Balo Gấu Tiedye - BGTD</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham3.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Balo Đám Mây Degrey - BDM</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham4.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Degrey Tiedye Backpack - DTDB</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham5.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Degrey Galaxy Backpack - DGB</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham6.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Degrey Backpack Grey - DBPG</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">420000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham7.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Basic Backpack Degrey Nâu - BBD Nâu</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham8.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Balo Trà Sữa Degrey - BTS</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">420000 VNĐ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham9.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Mono Degrey Backpack - MDB</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham10.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Degrey Nano Backpack - DNN</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">420000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd" src="sanpham11.jpeg" alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Balo Hạt Nhân Degrey - BHND</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="sanpham12.jpeg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Balo Lưới Degrey - BLD</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">420000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="sanpham13.jpeg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Basic Backpack Degrey Trắng - BBD Trắng</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">420000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="sanpham14.jpeg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Degrey Leather Basic Balo - LBB</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="sanpham15.jpeg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Degrey Letter Backpack - DLBP</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">420000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="main-product no-margin">
+                    <div class="img-product">
+                        <img class="img-prd"
+                            src="sanpham16.jpeg"
+                            alt="">
+                    </div>
+                    <div class="content-product">
+                        <h3 class="content-product-h3">Basic Backpack Degrey Nâu - BBD Nâu</h3>
+                        <div class="content-product-deltals">
+                            <div class="price">
+                                <span class="money">378000đ</span>
+                            </div>
+                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="products">
+                <ul>
+                    <h2>ÁO KHOÁC | JACKET</h2><br />
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham17.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Áo Jean Degrey Basic - AJB Xanh</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">520000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham18.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Áo Jean Degrey Basic Đen - AJB Đen</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">312000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham19.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Degrey Cardigan D - DCD</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">550000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham20.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Áo Khoác Panda Green - AKPD Green</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">340000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham21.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Áo Khoác Nấm Degrey Navy SS2 - AKND Navy SS2</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">253500đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham22.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Hoodie Xoài Nhí Nhố - HNN</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">312000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd" src="sanpham23.jpeg" alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Hoodie Xoài Nhí Nhố - HNN</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">3125000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham24.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Flannel Jacket Degrey Cam - FJD Cam</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">39000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham25.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Áo Khoác Nấm Degrey Navy - AKND Navy</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">390000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham26.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Hoodie Degrey Basic Xanh - HDB Xanh</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">315000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham27.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Crocodile Jacket Degrey Black - CJD Black</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">460000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="main-product no-margin">
+                        <div class="img-product">
+                            <img class="img-prd"
+                                src="sanpham28.jpeg"
+                                alt="">
+                        </div>
+                        <div class="content-product">
+                            <h3 class="content-product-h3">Hoodie Degrey Basic - HDB</h3>
+                            <div class="content-product-deltals">
+                                <div class="price">
+                                    <span class="money">420000đ</span>
+                                </div>
+                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="products">
+                    <ul>
+                        <h2>ÁO THUN | T-SHIRT</h2><br />
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham29.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Xấu Lên Bờ - AXLB</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">203000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd" src="sanpham30.jpeg" alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Thun Supima Cotton Cổ V Ngắn Tay</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">391000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham31.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Xoài YangHo - AXYH</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">200000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product no-margin">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham32.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Tiên Tri Vũ Trụ Xoài - TTVT</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">240000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham33.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Xoài Cảm Xúc - AXCX</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">196000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham34.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Polo Mono Degrey Nâu - APMD Nâu</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">105000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham36.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Thun Degrey Nhiễu Đen - ATDN Đen</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">187500đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product no-margin">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham361.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Thun Gân Degrey - ATGD</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">290000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham37.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Thun essential Trắng - AES Trắng</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">156000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham38.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Sweater Degrey Basic - SDB</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">247000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham39.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Túi Thêu Degrey Basic Navy - ATTD Navy</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">290000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="main-product no-margin">
+                            <div class="img-product">
+                                <img class="img-prd"
+                                    src="sanpham40.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="content-product">
+                                <h3 class="content-product-h3">Áo Polo Mono Degrey - APMD</h3>
+                                <div class="content-product-deltals">
+                                    <div class="price">
+                                        <span class="money">350000đ</span>
+                                    </div>
+                                    <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="products">
+                        <ul>
+                            <h2>QUẦN | JEAN</h2><br />
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                        src="sanpham42.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Quần Dù Túi Hộp Degrey - QTH</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">520000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                        src="sanpham43.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Quần Jean Dài Basic Xanh - QJD Xanh</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">214500đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                        src="sanpham44.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Quần Jean Dài Basic - QJD Đen</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">214500đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-product no-margin">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                        src="sanpham45.jpg"
+                                        alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Quần jean ống rộng</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">89000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <ul>
+                                <h2>VÍ | WALLET</h2><br />
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                            src="sanpham46.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Degrey Hologram Long Wallet - DHLW</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">154000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                            src="sanpham47.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Degrey Hologram Short Wallet - DHSW</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">190000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                            src="sanpham48.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Degrey Letter Long Wallet - DLLW</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">225000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product no-margin">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                            src="sanpham49.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Ví Da Dài Degrey - VD Dài</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">290000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                            src="sanpham50.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Ví Da Degrey - VD ngắn</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">290000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="main-product">
+                                    <div class="img-product">
+                                        <img class="img-prd"
+                                            src="https://product.hstatic.net/1000281824/product/cec19174-3378-4efa-97b2-7ce371f983f6_c971b838470a40a29a960153d973306a_master.jpeg"
+                                            alt="">
+                                    </div>
+                                    <div class="content-product">
+                                        <h3 class="content-product-h3">Degrey Letter Short Wallet - DLSW</h3>
+                                        <div class="content-product-deltals">
+                                            <div class="price">
+                                                <span class="money">198000đ</span>
+                                            </div>
+                                            <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <ul>
+                                    <h2>TÚI | BAG</h2><br />
+                                    <li class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham52.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Túi Phao ss2 Đen - TPDD</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">330000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham53.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Túi Phao ss2 Be - TPDB</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">330000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham54.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Small Shoulder Bag - SSB</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">261000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product no-margin">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham55.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Small Shoulder Bag Holo - SSB Holo</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">261000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham56.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Mini Shoulder Bag Đen - MSB Đen</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">261000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham57.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Mini Shoulder Bag Holo - MSB Holo</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">261000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham58.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Shoulder Bag Holo Trắng - SBH Trắng</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">261000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product no-margin">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham59.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Shoulder Bag Holo - SBH</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">261000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham60.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Túi Xa Lánh - TXL</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">261000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="main-product">
+                                        <div class="img-product">
+                                            <img class="img-prd"
+                                                src="sanpham61.jpeg"
+                                                alt="">
+                                        </div>
+                                        <div class="content-product">
+                                            <h3 class="content-product-h3">Túi Chéo Yang Hồ - TCYH</h3>
+                                            <div class="content-product-deltals">
+                                                <div class="price">
+                                                    <span class="money">198000đ</span>
+                                                </div>
+                                                <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                </ul>
+                    </div>
+                    <div class="products">
+                        <ul>
+                            <h2>GẤU BÔNG</h2><br />
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                        src="sanpham62.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Khủng Long Cam - KLS</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">62000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                        src="sanpham63.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Khủng Long Xanh - KLX</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">90000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="main-product">
+                                <div class="img-product">
+                                    <img class="img-prd"
+                                        src="sanpham64.jpeg"
+                                        alt="">
+                                </div>
+                                <div class="content-product">
+                                    <h3 class="content-product-h3">Khủng Long Đen - KLĐ</h3>
+                                    <div class="content-product-deltals">
+                                        <div class="price">
+                                            <span class="money">120000đ</span>
+                                        </div>
+                                        <button type="button" class="btn btn-cart">Thêm Vào Giỏ</button>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+    </section>
+    <footer>
+        <div class="footer-img">
+            <img src="" alt="">
+            <div class="follow">
+                <a href="https://www.facebook.com/trungkun2k1" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                <p>
+                <h4>ĐH10C2-Nguyễn Văn Trung</h4>
+                </p>
+                <a href="https://www.tiktok.com/search?lang=vi-VN&q=%40trungkun2001&t=1667117631523" class="tiktok"><i
+                        class="fa-brands fa-tiktok"></i></a>
+            </div>
+        </div>
+        <script src="cart.js"></script>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
